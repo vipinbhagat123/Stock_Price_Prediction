@@ -9,6 +9,7 @@ on:
 permissions:
   contents: read
   packages: write
+  id-token: write
 
 jobs:
   build:
@@ -34,3 +35,4 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ env.OWNER_LC }}/stock-prediction:latest
+          file: ./Dockerfile
