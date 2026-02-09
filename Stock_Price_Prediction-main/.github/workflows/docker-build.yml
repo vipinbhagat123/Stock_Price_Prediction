@@ -39,4 +39,3 @@ jobs:
           push: true
           tags: ghcr.io/${{ env.OWNER_LC }}/stock-prediction:latest
           file: ./Dockerfile
->>>>>>> 6a6ac8ce1531f9badbc842c93c40816ebe9f7523
