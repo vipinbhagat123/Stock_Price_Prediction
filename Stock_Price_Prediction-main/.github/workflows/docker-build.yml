@@ -9,12 +9,8 @@ on:
 permissions:
   contents: read
   packages: write
-<<<<<<< HEAD
-#jkj
-=======
   id-token: write
 
->>>>>>> 6a6ac8ce1531f9badbc842c93c40816ebe9f7523
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,12 +19,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-<<<<<<< HEAD
-=======
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
->>>>>>> 6a6ac8ce1531f9badbc842c93c40816ebe9f7523
       - name: Login to GHCR
         uses: docker/login-action@v3
         with:
@@ -45,7 +38,5 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ env.OWNER_LC }}/stock-prediction:latest
-<<<<<<< HEAD
-=======
           file: ./Dockerfile
 >>>>>>> 6a6ac8ce1531f9badbc842c93c40816ebe9f7523
