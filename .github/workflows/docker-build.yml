@@ -1,6 +1,6 @@
 name: Build and Push Stock Prediction Image
 
-on:
+on: 
   push:
     branches:
       - main
